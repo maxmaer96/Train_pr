@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../resources/com/example/mvp/drawables/logo.png" />
+         </image></ImageView>
+      <Label layoutX="70.0" layoutY="58.0" text="Магазин еды" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="26.0" />
+         </font></Label>
+      <Label layoutX="217.0" layoutY="154.0" text="Номер" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="179.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#clear" text="Отмена" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="150.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="loginBtn" layoutX="160.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#logIn" text="Вход" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="257.0" layoutY="191.0" onKeyPressed="#tryAuth" promptText="****" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="180.0" />
+      <TextField fx:id="textFieldNum" layoutX="257.0" layoutY="150.0" onKeyPressed="#checkNum" promptText="ID****" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0" />
+      <TextField fx:id="textFieldCod" layoutX="257.0" layoutY="231.0" onKeyPressed="#checkCode" prefHeight="25.0" prefWidth="112.0" promptText="Aa!=23(-" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="210.0" />
+      <ImageView fx:id="refreshBtn" fitHeight="30.0" fitWidth="30.0" layoutX="365.0" layoutY="208.0" onMouseClicked="#refreshCode" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="205.0">
+         <image>
+            <Image url="@drawables/update.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="160.0" text="Пароль" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="190.0" text="Код" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="210.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
